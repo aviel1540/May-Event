@@ -1,0 +1,13 @@
+.header {
+    height: 10rem;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 10rem;
+    width: 13rem;
+}
