@@ -1,20 +1,16 @@
 import React from "react";
-import styles from "./Main.module.css";
+import { useState } from "react";
+// import styles from "./Main.module.css";
+import { Categories } from "../components/Categories";
 
 export const MainLayout = (props) => {
+
+  const [ showCategories, setShaowCategories ] = useState(true);
+  
+
   return (
-    <div>
-      <main>
-        <div className={styles.buttons}>
-          <button className={styles.mikve}>ערבי מקווה</button>
-          <button className={styles.bride}>מסיבות רווקות</button>
-          <button className={styles.married}>הצעות נישואין</button>
-        </div>
-        <div className={styles.buttons}>
-          <button className={styles.tableOrder}>סידורי שולחן</button>
-          <button className={styles.birthDays}>ימי הולדת</button>
-        </div>
-      </main>
-    </div>
+    <main>
+      {showCategories && <Categories />}
+    </main>
   );
 };
