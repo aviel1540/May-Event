@@ -1,16 +1,17 @@
 import React from "react";
 import { useState } from "react";
-// import styles from "./Main.module.css";
-import { Categories } from "../components/Categories";
+import ImageGallery from "react-image-gallery/styles/css/image-gallery.css";
 
 export const MainLayout = (props) => {
 
-  const [ showCategories, setShaowCategories ] = useState(true);
+
   
 
   return (
     <main>
-      {showCategories && <Categories />}
+        <div>
+          
+        </div>
     </main>
   );
 };
